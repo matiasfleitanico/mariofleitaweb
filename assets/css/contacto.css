@@ -1,0 +1,150 @@
+@import url(fontawesome-all.min.css);
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic");
+
+/*
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  color: #ffffff;
+  background-color: #000;
+}
+
+.contact-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "a b"
+  "c c";
+  gap: 60px;
+  padding: clamp(40px, 6vw, 80px);
+  background-color: #111;
+  color: #fff;
+}
+
+/* REDES */
+.socials h2 {
+  margin-bottom: 1em;
+}
+
+.social-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 18px;
+  border: 1px solid #ccc;
+  color: #111;
+  background-color: #fff;
+  text-decoration: none;
+  margin-bottom: 14px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+
+
+.icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  color: currentColor;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+}
+.social-card:hover {
+  background-color: #8e8d8d;
+  color: #fff;
+}
+
+.mario {
+  width: 20em;
+  aspect-ratio: 1 / 1;   /* fuerza el cuadrado */
+  overflow: hidden;
+  display: grid;
+  align-items: center;
+  align-content: center;
+}
+
+.mario img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* recorta sin deformar */
+  object-position: top;
+  display: block;
+}
+
+/* CONTACTO */
+.contact {
+  display: grid;
+  grid-area: c;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 2em;
+}
+
+.contact-text h2 {
+  margin-bottom: 12px;
+}
+
+.contact-text p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* FORM */
+/* PLACEHOLDER */
+form {
+  display: grid;
+  grid-gap: 0.4em;
+}
+.contact-form ::placeholder {
+  color: #777;
+  font-size: 0.85rem;
+}
+
+/* Compatibilidad */
+.contact-form :-ms-input-placeholder {
+  color: #777;
+}
+
+.contact-form ::-ms-input-placeholder {
+  color: #777;
+}
+
+/* FOCUS */
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: #000;
+  background-color: #4f4e4e;
+}
+
+/* TRANSICIÓN SUAVE */
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+  }
+}
