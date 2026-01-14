@@ -25,11 +25,13 @@ body {
 .hero {
   background-color: #111;
   padding: 60px 20px;
+  
 }
 
 .hero-container {
   max-width: 1100px;
   margin: 0 auto;
+
 }
 
 .hero-title {
@@ -40,9 +42,14 @@ body {
 /* CONTENIDO */
 .hero-content {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 40px;
+  grid-template-columns: 1fr;
   align-items: start;
+  grid-gap: 0.5em;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows:auto 1fr ;
+  grid-template-areas: "a b" "c c";
+  
 }
 /* imagen */
 .hero-image {
@@ -66,11 +73,17 @@ body {
   color: #e0e0e0;
 }
 
+.hero-text-2 {
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  grid-area: c
+}
 .signature {
   margin-top: 30px;
-  font-size: 1.1rem;
   font-style: italic;
-  text-align: right;
+  text-align: left;
+  font-size: 2em;
 }
 
 /* VIDEO */
