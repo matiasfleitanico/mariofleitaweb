@@ -3045,7 +3045,7 @@ input, select, textarea {
 				.features article .image {
 					margin-bottom: 1.5em;
 					margin-left: -1.5em;
-					margin-top: -1.5em;
+					margin-top: -1em;
 					width: calc(100% + 3em);
 				}
 
@@ -3545,7 +3545,7 @@ input, select, textarea {
 
 /* Wrapper */
 	.guide{
-			font-size: 3em;
+			font-size: 3rem;
 			margin: 0;
 			padding: 0;
 		}
@@ -4066,6 +4066,7 @@ input, select, textarea {
 				margin: 0 0 1em 0 !important;
 				max-width: 85%;
 				width: 12em;
+
 			}
 
 		}
